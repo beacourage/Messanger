@@ -8,8 +8,11 @@ class Talk2me < Sinatra::Base
 
   post "/message" do
     @message = params[:message]
-    erb(:message)
-    redirect "/"
+    erb :homepage
+    # redirect ("/")
   end
 
 end
+
+
+#sessions

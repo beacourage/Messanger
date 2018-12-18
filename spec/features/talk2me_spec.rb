@@ -4,6 +4,6 @@ feature "Homepage" do
     expect(page).to have_content "TALK2ME"
     fill_in "message", with: "Talk to me"
     click_button "Send"
-    # expect(page).to have_content "Welcome, Beatrice!"
+    expect(page).to have_content "Message: Talk to me"
   end
 end
