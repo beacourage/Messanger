@@ -5,4 +5,9 @@ class Message
     @content = content
     @time = Time.now
   end
+
+  def twenty_characters
+    @content[0...20]
+  end
+
 end
