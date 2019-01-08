@@ -13,7 +13,8 @@
 
 
 <h1>Messages:</h1><% @messages.reverse.each do |message| %>
-      <div>
-        <%= message.twenty_characters %> | <%= message.time %>
-      </div>
-    <% end %>
+
+    <br>
+    <a href = "/all_messages/<%= index %>"><%= message.twenty_characters %></a> | <%= message.time %>
+    <%end%>
+    <br />
